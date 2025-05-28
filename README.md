@@ -9,4 +9,6 @@ It should become the go-to source for new employees and can be extended and edit
 
 ## Topics
 
-[Python 3 setup with Pyenv and Poetry](python3/setup.md)
+[Python 3 setup with UV](python3/uv-setup.md)
+
+[Python 3 setup with Pyenv and Poetry [deprecated]](python3/poetry-setup.md)
