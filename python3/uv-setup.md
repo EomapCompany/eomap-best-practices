@@ -129,7 +129,7 @@ to
 5. call "uv sync"
 
 #### TIP
-The easiest is to write down the names in a file and install them again with uv add --group
+The easiest is to write down the names in a file or create a pyproject clone and install them again with uv add --group into a new pyproject.toml
 
 ## Additional Resources
 
