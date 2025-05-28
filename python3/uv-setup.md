@@ -114,8 +114,22 @@ uv python list
 1. Delete the poetry.lock
 2. Delete python interpreter in pycharm
 3. delete venv -> rm -rf .venv
-4. Regularly update your dependencies to get security fixes and new features
-5. Use UV's compile command to resolve dependencies and generate lockfiles
+4. Change group names from 
+```toml
+[tool.poetry.group.<group_name>.dependencies]
+fastapi = "^0.115.1"
+```
+to
+```toml
+[dependency-groups]
+<group_name> = [
+    "fastapi>=0.115.1",
+]
+```
+5. call "uv sync"
+
+#### TIP
+The easiest is to write down the names in a file and install them again with uv add --group
 
 ## Additional Resources
 
