@@ -27,6 +27,9 @@ UV can be used as a replacement for pip and pip-tools. Here are the most importa
 Syncing your environment with your requirements file ensures that all packages specified in your requirements file are installed, and packages not specified are removed.
 
 ```shell
+# Project initialization after repo clone
+uv sync --all-groups
+
 # Sync your environment with requirements.txt
 uv pip sync requirements.txt
 
@@ -126,7 +129,7 @@ to
     "fastapi>=0.115.1",
 ]
 ```
-5. call "uv sync"
+5. call "uv sync --all-groups"
 
 #### TIP
 The easiest is to write down the names in a file or create a pyproject clone and install them again with uv add --group into a new pyproject.toml
