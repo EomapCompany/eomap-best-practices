@@ -11,4 +11,6 @@ It should become the go-to source for new employees and can be extended and edit
 
 [Python 3 setup with UV](python3/uv-setup.md)
 
+[PyCharm Ruff Integration](python3/ruff-integration.md)
+
 [Python 3 setup with Pyenv and Poetry [deprecated]](python3/poetry-setup.md)
