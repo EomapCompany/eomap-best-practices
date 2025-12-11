@@ -1,0 +1,45 @@
+line-length = 120
+target-version = "py312"
+
+extend-exclude = [
+    ".venv",
+    ".ruff_cache",
+    ".pytest_cache",
+    ".mypy_cache",
+    "__pycache__",
+    "build",
+    "dist",
+    ".eggs",
+    "*.egg-info",
+    ".tox",
+    ".nox",
+    "node_modules",
+    "cdk.out",
+]
+
+[lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # pyflakes
+    "I", # isort
+    "C", # flake8-comprehensions
+    "B", # flake8-bugbear
+    "N", # pep8-naming
+]
+ignore = [
+    "B008",
+    "B904",
+    "N805",
+]
+
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "^(_+|_+[a-zA-Z0-9_]*[a-zA-Z0-9]+)$"
+
+[lint.isort]
+section-order = ["standard-library", "third-party", "first-party", "local-folder"]
+no-lines-before = ["local-folder"]
+
+[format]
+quote-style = "double"

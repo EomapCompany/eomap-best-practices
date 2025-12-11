@@ -111,6 +111,7 @@ uv python list
 3. Type uv
 4. Select your interpreter and click on the terminal icon to open a terminal
 5. Use UV commands in the terminal to manage packages
+6. See [ruff-integration.md](ruff-integration.md) for Ruff integration
 
 ## Switch from poetry to uv
 
