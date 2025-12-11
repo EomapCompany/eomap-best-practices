@@ -9,3 +9,11 @@ uv add ruff --group dev
 3. Setup PyCharm correctly
     - Settings -> Python -> Tools -> Ruff -> Enable 
     - Execution mode: Interpreter
+
+4. Github Actions CI/CD
+   - Simply use 
+   ```yaml
+      - name: Ruff linting
+        uses: astral-sh/ruff-action@v3
+   ```
+   - It will automatically search for the correct version in the pyproject.toml
